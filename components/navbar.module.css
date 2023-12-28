@@ -1,0 +1,125 @@
+.navBoard {
+  height: 10vh;
+  background-color: rgb(29, 29, 29);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.navBoard > span {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  background-color: #523a78;
+  background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
+  color: transparent;
+  background-clip: text;
+}
+
+
+
+.navBoard > a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.navBoard > a:hover {
+  color: blueviolet;
+}
+
+.navBoard > div:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.burger {
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger > span {
+  display: block;
+  width: 100%;
+  margin-top: 15%;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  display: none;
+}
+
+.burgerMenu {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 99;
+  background-color: rgb(29, 29, 29);
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.burgerMenu > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-color: rgb(29, 29, 29);
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.burgerMenu > div:nth-child(1) {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.burgerMenu > a:hover {
+  text-decoration: underline;
+}
+
+.testModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.testModal > div {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.testModal > div:hover {
+  background: rgba(128, 128, 128, 0.521);
+  padding: 5px 0 5px 0;
+}
+
+@media (max-width: 800px) {
+  .burger > span {
+    display: block;
+  }
+
+  .navBoard {
+    justify-content: space-between;
+  }
+
+  .navBoard > a,
+  .navBoard > div:nth-child(3) {
+    display: none;
+  }
+}

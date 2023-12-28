@@ -1,0 +1,43 @@
+.testBoard {
+  min-height: 90vh;
+  height: 100%;
+  text-align: center;
+}
+
+.socio {
+  color: #ffffff;
+  padding: 5%;
+}
+
+.socio > p {
+  margin-top: 50px;
+}
+
+.socio > button {
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  background-color: #058cfa;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socioImg {
+  width: 400px;
+  box-shadow: 0 0 20px gray;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.addSec {
+  padding: 0 5%;
+}
+
+@media (max-width: 800px) {
+  .socioImg {
+    width: 300px;
+  }
+}

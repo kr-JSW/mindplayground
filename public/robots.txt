@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /exclude
+
+# Host
+Host: http://mindplayground.shop
+
+# Sitemaps
+Sitemap: http://mindplayground.shop/sitemap.xml
